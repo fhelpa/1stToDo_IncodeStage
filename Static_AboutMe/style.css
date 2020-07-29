@@ -1,0 +1,1067 @@
+/*-----------ANIMATIONSSSSSSSSSS-----------*/
+
+
+@keyframes slideInFromDown {
+  0% {
+    transform: translateY(+50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromDownLess {
+  0% {
+    transform: translateY(+10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+/*-----------MAIN ELEMENTS-----------*/
+
+
+
+.container-fluid{
+  max-width: 70vw;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color:#f5f5f5;
+}
+
+
+
+/*--------NAVBAR-------*/
+
+
+.nav{
+  position: fixed;
+  background-color:#f5f5f5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 10px 10px;
+  /*border: 2px solid green;*/
+  margin: 0;
+  /*border-bottom: 1px solid black;*/
+
+}
+
+.nav h1{
+  font-size: .9rem;
+  font-family: 'Roboto';
+  text-decoration: none;
+  font-weight: 700;
+  /*  border: 2px solid purple;*/
+  margin: 0px 0px;
+
+}
+
+
+.Logo {
+  text-align: left;
+  margin: 0;
+  text-transform: none;
+  padding:0;
+
+}
+
+
+.NoMenu{
+  text-align: right;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+/*--------LOGO LINK-------*/
+
+.Logo h1 a{
+  color: black;
+  transition: color 0.3s;
+}
+
+
+.Logo a:hover{
+  text-decoration: none;
+  color: #ff4800;
+  cursor: default;
+}
+/*-------------------------------------*/
+
+
+
+.smileRow{
+  margin-top: 20vh;
+}
+
+.segnaposto{
+  padding: 0;
+  opacity: 0;
+  border: 2px solid red;
+}
+
+#smile{
+  font-size: 10rem;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Roboto";
+}
+
+
+
+
+
+.row{
+  padding: 0;
+  max-width: 100vw;
+  /*border: 2px solid red;*/
+
+}
+
+.presentation{
+    margin-top: 20vh;
+
+}
+
+
+.row h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+
+.Hello{
+  text-decoration: underline;
+  /*border: 2px solid orange;*/
+  padding: 0;
+}
+
+.Hello h1,
+.DescriptionMenu h1{
+    animation: .8s ease-out 0s 1 slideInFromDown;
+
+}
+
+.DescriptionMenu{
+  text-decoration: none;
+  /*  border: 2px solid orange;*/
+  padding: 0;
+}
+
+
+#about,
+#works{
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  transition: all .5s ease;
+}
+
+#about:hover,
+#works:hover{
+
+  color: blue;
+  border-bottom: 2px solid #ff4800;;
+  text-decoration: none;
+  /* background-color: black;*/
+
+
+}
+
+
+/*
+#works::after{
+  content: "🡫";
+  font-size: 3.5rem;
+  line-height: 3rem;
+  position: absolute;
+  cursor: default;
+  top: 40rem;
+  left: 5rem;
+  transition: all 1s ease-in-out;
+}
+
+#works:hover::after{
+transform: translateY(-36rem) rotateZ(540deg);
+}*/
+
+
+#works::after{
+  content: "";
+position: absolute;
+left: 0px;
+top: 0px;
+  transition: all 1s ease-in-out;
+}
+
+#works:hover::after{
+transform: scale();
+}
+
+
+
+
+
+
+
+
+/*
+#about:hover::before,
+#works:hover::before{
+content:".";
+font-size: 2rem;
+font-family: helvetica;
+color: blue;
+
+}*/
+
+/*
+.footer{
+
+position: absolute;
+top: 100vh;
+height: 100vh;
+max-width: 100vw;
+background-color: black;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+*/
+
+
+
+
+
+
+/*--------FOOTER-------*/
+
+
+
+.bottomFooter{
+  position: fixed;
+  /*background-color:#f5f5f5;*/
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px 10px;
+  /*  border: 2px solid green;*/
+  margin: 0;
+
+}
+
+.bottomFooter h1{
+  font-size: .9rem;
+  font-family: 'Roboto';
+  text-decoration: none;
+  font-weight: 700;
+  /*  border: 2px solid purple;*/
+  margin: 0px 0px;
+  line-height: 1rem;
+
+}
+
+
+.Copyright {
+  text-align: left;
+  margin: 0;
+  padding:0;
+/*border: 2px solid purple*/
+}
+
+
+.Place{
+  text-align: right;
+  margin: 0;
+  padding:0;
+}
+
+/*.noDisplay{
+  opacity: 0;    }    /*--------segnaposto-------*/
+
+
+/*--------LOGO LINK-------*/
+
+.bottomFooter h1 a{
+  color: black;
+  transition: color 0.3s;
+}
+
+
+.bottomFooter a:hover{
+  text-decoration: none;
+  color: #ff4800;
+  cursor: default;
+}
+/*-------------------------------------*/
+
+
+
+
+/*-----------------ABOUT--------------------*/
+
+.aboutRow{
+  margin-top: 20vh;
+/*  border: 2px solid red;*/
+}
+
+.about{
+  padding: 0;
+}
+
+
+.about h1{
+    font-weight: 400;
+    animation: 1s ease-out 0s 1 slideInFromDown;
+}
+
+
+.contacts{
+  text-align: right;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+.contacts h1{
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0px 0px;
+  line-height: 2rem;
+  animation: 1s ease-out 0s 1 slideInFromDown;
+}
+
+.contacts h1 a{
+  color: black;
+}
+
+.contacts #email{
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.contacts #tel{
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+
+
+.Biography{
+  padding: 0;
+  color:black;
+}
+
+
+.Biography h1{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  animation: 1s ease-out 0s 1 slideInFromDownLess;
+}
+
+
+.profilePic{
+  display: none;
+}
+
+
+
+.affix{
+  position: fixed;
+  text-decoration: underline;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------SOFTWARESECTION--------------------*/
+
+.softwareSection{
+/*  border: 2px solid purple;*/
+}
+
+.softwareSection h1{
+
+  font-size: 1.1rem;
+    line-height: 1.5rem;
+    animation: 1s ease-out 0s 1 slideInFromDown;
+
+}
+
+
+
+.software{
+  padding: 0;
+  color:black;
+}
+
+.software h1{
+  font-weight: 500;
+}
+
+
+.softwareList{
+    padding: 0;
+}
+
+.row-grid{
+  margin-top: 120px;
+  margin-bottom: 200px;
+
+}
+
+
+
+
+
+/*-----------------CURRICULUMVITAE--------------------*/
+
+.curriculumVitae{
+  margin-top: -150px;
+/*  border: 2px solid purple;*/
+}
+
+.curriculumVitae h1{
+
+  font-size: 1.1rem;
+    line-height: 1.5rem;
+      animation: 1s ease-out 0s 1 slideInFromDown;
+}
+
+
+.placeholderCv{
+  padding: 0;
+  opacity: 0;
+}
+
+
+.cv h1{
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.cv h1 a{
+  color: black;
+}
+
+
+.cv{
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------WORKS-------------------------*/
+
+
+
+.allWorksContainer{
+  margin: 20vh 0vw;
+  padding: 0;
+}
+
+
+.Enjoy{
+  position: fixed;
+    padding: 0;
+  width: 100%;
+  height: 80vh;
+padding-right: 0px;
+/*max-width: 15vw;*/
+}
+
+
+
+.Enjoy h1{
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+  text-decoration: underline;
+  color: black;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+
+}
+
+.Enjoy p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.Enjoy #SelectedWorks,
+.Enjoy #Phrase{
+    animation: .8s ease-out 0s 1 slideInFromDown;
+}
+
+#Phrase{
+  text-decoration: none;
+}
+
+
+
+.Splitter{
+  position: absolute;
+padding: 10px 0px;
+bottom: 0;
+right: 0;
+z-index: 10000;
+}
+
+
+.Splitter h1{
+padding: 0px;
+text-align: right;
+font-size: .9rem;
+font-family: 'Roboto';
+text-decoration: none;
+font-weight: 700;
+/*  border: 2px solid purple;*/
+margin: 0px 0px;
+line-height: auto;
+}
+
+
+
+
+.workRow{
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 100px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+
+.workRow h1{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+
+}
+
+
+
+
+.Title{
+  padding: 0;
+    animation: .8s ease-out 0s 1 slideInFromDownLess;
+    padding-right: 10px;
+}
+
+
+.Title #shortDesc{
+  font-size: 1rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: black;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: .9rem;
+  padding-bottom: 20px;
+    height: 50%;
+}
+
+
+.Image{
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  animation: .8s ease-out 0s 1 slideInFromDownLess;
+}
+
+
+.Image #Image{
+  transition: all 1s ease-out;
+}
+
+#Image:hover{
+  transform: scale(1.1);
+}
+
+
+/*
+#Image::before{
+  content: "🡪";
+  font-size: 5rem;
+  font-family: 'Roboto';
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 04s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 100000000;
+}
+
+#Image:hover::before{
+  animation: .8s ease-out 0s 1 slideInFromDownLess;
+    opacity: 1;
+}*/
+
+
+
+
+#Image{
+  height: auto;
+  width: 700px;
+  padding: 0;
+  object-fit: cover;
+  margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------PAGEWORK     PAGEPAGEPAGE--------------------*/
+
+.rowSingleWorkPage{
+  margin-top: 20vh;
+/*  border: 2px solid red;*/
+}
+
+.workNameTail{
+  padding: 0;
+}
+
+
+.workNameTail h1{
+    font-weight: 400;
+    animation: 1s ease-out 0s 1 slideInFromDown;
+}
+
+
+#workNameTail{
+  text-decoration: underline;
+}
+
+
+
+
+
+.DescriptionWork{
+
+    padding: 0;
+    color:black;
+  }
+
+  .DescriptionWork h1{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    animation: 1s ease-out 0s 1 slideInFromDownLess;
+}
+
+
+
+
+.workedOn{
+    padding: 0;
+
+}
+
+.Duties{
+    margin-top: 5vh;
+}
+
+
+.Duties h1{
+  font-size: 1.1rem;
+    line-height: 1.5rem;
+    animation: 1s ease-out 0s 1 slideInFromDown;
+}
+
+
+
+
+
+
+/*-----------------TOOLS WORK--------------------*/
+
+.toolsWork{
+    margin-top: 2vh;
+      margin-bottom: 20vh;
+/*  border: 2px solid purple;*/
+}
+
+.toolsWork h1{
+
+  font-size: 1.1rem;
+    line-height: 1.5rem;
+    animation: 1s ease-out 0s 1 slideInFromDown;
+
+}
+
+
+
+
+.tools{
+  padding: 0;
+  color:black;
+}
+
+.tools h1{
+  font-weight: 500;
+}
+
+
+.toolsList{
+    padding: 0;
+}
+
+
+.video{
+  animation: 1s ease-out 0s 1 slideInFromDownLess;
+
+}
+
+
+
+.image_1{
+  animation: 1s ease-out 0s 1 slideInFromDownLess;
+}
+
+#train,
+#van,
+#snow,
+#girandola,
+#valigia,
+#stairs,
+#trottola
+{
+  width: 100%;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#chair{
+
+    width: 100%;
+    padding: 0;
+    margin-top: 200px;
+}
+
+
+
+
+#pinetest,
+#pinework{
+  width: 100%;
+    padding: 0;
+  margin-top: 20px;
+
+}
+
+/*
+
+.row-grid{
+  margin-top: 120px;
+  margin-bottom: 200px;
+
+}*/
+
+
+
+
+
+
+@media (max-width: 991.98px) {
+
+  .container-fluid,
+  .aboutFluid,
+  .worksFluid,
+  .rowSingleWorkPage {
+    max-width: 100vw;
+  }
+
+  .DescriptionMenu{
+    margin-top: 30px;
+  }
+
+  #about,
+  #works{
+    color: blue;
+  }
+
+
+.presentation,
+.aboutRow,
+.softwareSection,
+.curriculumVitae,
+.worksFluid,
+.works,
+.row1,
+.Enjoy,
+.rowSingleWorkPage,
+.toolsWork,
+.Duties,
+.video,
+.image_1{
+  padding: 0px 10px;
+}
+
+  .about h1{
+    padding: 0;
+    animation: 1s ease-out 0s 1 slideInFromDown;
+  }
+
+
+
+  #works::after{
+    content: "🡫";
+  display: none;
+  }
+
+
+  .profilePic{
+    width: 60%;
+    height: auto;
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+
+  }
+
+
+  .Biography h1{
+    padding: 0;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    min-width: 100%;
+    /*border: 2px solid green;*/
+  }
+
+  .affix{
+    position: relative;
+    text-decoration: underline;
+    padding: 0;
+  }
+
+
+  .contacts{
+    text-align: left;
+    margin-top: 7rem;
+  }
+
+  .contacts h1{
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 0px;
+    line-height: 2rem;
+  }
+
+  .contacts a{
+      text-decoration: none;
+  }
+
+  .contacts #email{
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .contacts #tel{
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+.row-grid{
+  margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.softwareSection{
+  display: none;
+}
+
+/*  .softwareSection h1{
+
+    font-size: .9rem;
+    line-height: 1rem;
+    font-weight: bolder;
+  }
+
+  .software h1{
+    font-size: 1rem;
+    line-height: 3rem;
+  }
+
+*/
+
+.placeholderCv{
+  padding: 0;
+display: none;
+}
+
+  .curriculumVitae h1{
+    font-size: 1rem;
+      line-height: 1rem;
+      animation: 1s ease-out 0s 1 slideInFromDown;
+      }
+
+      .curriculumVitae h1 a{
+        font-weight: 400;
+      }
+
+
+.allWorksContainer{
+  margin-top: 10vh;
+}
+
+      .enjoy{
+        margin-top: 20vh;
+        padding: 0;
+      }
+
+      .Enjoy{
+        position: relative;
+          padding: 0;
+        width: 100%;
+        height: 30vh;
+        max-width: 100vw;
+      }
+
+
+
+      .Enjoy h1{
+        font-size: 1.5rem;
+        font-family: 'Roboto';
+        font-weight: 400;
+        text-decoration: underline;
+        color: black;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+
+      }
+
+      .Enjoy p{
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2rem;
+      }
+
+      .Title{
+        padding: 0;
+          animation: .8s ease-out 0s 1 slideInFromDownLess;
+          padding-right: 0px;
+      }
+
+      #Image{
+        height: auto;
+        width: 100%;
+        padding: 0;
+        object-fit: cover;
+        margin: 0;
+
+      }
+
+      .Splitter h1{
+        display: none;
+        position: relative;
+
+      }
+
+
+
+
+}
+
+
+
+
+
+
+
+#subAbout{
+  color: blue;
+}
+
+
+#subWork{
+  color: blue;
+}
